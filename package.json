@@ -1,0 +1,21 @@
+{
+  "name": "freelance-nepal-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://bibishanpandey@bitbucket.org/bibishanpandey/freelance-nepal.git"
+  },
+  "author": "Bibishan Pandey",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/bibishanpandey/freelance-nepal#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}
