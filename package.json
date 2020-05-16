@@ -9,10 +9,10 @@
     "lite": "lite-server",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "clean": "rimraf dist",
-    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
-    "imagemin": "imagemin img/* -o dist/img",
-    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin aboutus.html -d dist --htmlmin -o dist/aboutus.html && usemin browseprojects.html -d dist --htmlmin -o dist/browseprojects.html && usemin dashboard.html -d dist --htmlmin -o dist/dashboard.html && usemin freelancers.html -d dist --htmlmin -o dist/freelancers.html && usemin messages.html -d dist --htmlmin -o dist/messages.html && usemin postproject.html -d dist --htmlmin -o dist/postproject.html && usemin profile.html -d dist --htmlmin -o dist/profile.html && usemin projects.html -d dist --htmlmin -o dist/projects.html && usemin pricing.html -d dist --htmlmin -o dist/pricing.html && usemin signin.html -d dist --htmlmin -o dist/signin.html && usemin signup.html -d dist --htmlmin -o dist/signup.html && usemin howitworks.html -d dist --htmlmin -o dist/howitworks.html",
+    "clean": "rimraf build",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* build/fonts",
+    "imagemin": "imagemin img/* -o build/img",
+    "usemin": "usemin index.html -d build --htmlmin -o build/index.html && usemin aboutus.html -d build --htmlmin -o build/aboutus.html && usemin browseprojects.html -d build --htmlmin -o build/browseprojects.html && usemin dashboard.html -d build --htmlmin -o build/dashboard.html && usemin freelancers.html -d build --htmlmin -o build/freelancers.html && usemin messages.html -d build --htmlmin -o build/messages.html && usemin postproject.html -d build --htmlmin -o build/postproject.html && usemin profile.html -d build --htmlmin -o build/profile.html && usemin projects.html -d build --htmlmin -o build/projects.html && usemin pricing.html -d build --htmlmin -o build/pricing.html && usemin signin.html -d build --htmlmin -o build/signin.html && usemin signup.html -d build --htmlmin -o build/signup.html && usemin howitworks.html -d build --htmlmin -o build/howitworks.html",
     "build": "npm run clean && npm run copyfonts && npm run imagemin && npm run usemin"
   },
   "repository": {
