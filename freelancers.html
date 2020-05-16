@@ -8,6 +8,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
     <!-- Bootstrap CSS -->
+    <!-- build:css css/main.css -->
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/node_modules/font-awesome/css/font-awesome.min.css">
 
@@ -15,6 +16,7 @@
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/social.css">
     <link rel="stylesheet" href="/css/body.css">
+    <!-- endbuild -->
 
     <link rel="icon" href="/img/bird_red.png" type="image/png" sizes="16x16">
 
@@ -44,14 +46,15 @@
                         </div>
                     </li>
                     <li class="nav-item mr-1">
-                        <a class="nav-link" href="/account/howitworks.html"><i class="fa fa-globe"></i> How it works?</a>
+                        <a class="nav-link" href="howitworks.html"><i class="fa fa-globe"></i> How it
+                            works?</a>
                     </li>
                     <li class="nav-item mr-1">
-                        <a class="nav-link" href="/pages/browseprojects.html"><i class="fa fa-bar-chart"></i>
+                        <a class="nav-link" href="browseprojects.html"><i class="fa fa-bar-chart"></i>
                             Browse Projects</a>
                     </li>
                     <li class="nav-item mr-1">
-                        <a class="nav-link" href="/pages/messages.html"><i class="fa fa-comments-o"></i>
+                        <a class="nav-link" href="messages.html"><i class="fa fa-comments-o"></i>
                             Messages<sup><span class="badge badge-danger">42</span></sup></a>
                     </li>
                     <li class="nav-item">
@@ -72,24 +75,25 @@
             <div class="collapse navbar-collapse justify-content-start" id="navbarSupportedContent1">
                 <ul class="nav navbar-nav m-2">
                     <li class="nav-item mr-4">
-                        <a class="btn btn-info shadow-lg rounded" href="/pages/postproject.html"><i class="fa fa-envelope-open-o"></i>
+                        <a class="btn btn-info shadow-lg rounded" href="postproject.html"><i
+                                class="fa fa-envelope-open-o"></i>
                             Post a Project</a>
                     </li>
                     <li class="nav-item mr-1">
-                        <a class="nav-link" href="/pages/dashboard.html"><i class="fa fa-home"></i>
+                        <a class="nav-link" href="dashboard.html"><i class="fa fa-home"></i>
                             Dashboard</a>
                     </li>
                     <li class="nav-item mr-1">
 
-                        <a class="nav-link" href="/pages/profile.html"><i class="fa fa-user-circle"></i>
+                        <a class="nav-link" href="profile.html"><i class="fa fa-user-circle"></i>
                             Profile</a>
                     </li>
                     <li class="nav-item mr-1">
-                        <a class="nav-link" href="/pages/projects.html"><i class="fa fa-file-code-o"></i>
+                        <a class="nav-link" href="projects.html"><i class="fa fa-file-code-o"></i>
                             My Projects</a>
                     </li>
                     <li class="nav-item mr-1">
-                        <a class="nav-link" href="/pages/freelancers.html"><i class="fa fa-search"></i>
+                        <a class="nav-link" href="freelancers.html"><i class="fa fa-search"></i>
                             Find Freelancers </a>
                     </li>
                 </ul>
@@ -100,7 +104,7 @@
     <div class="bg-white p-1">
         <div class="container mt-5 mb-5">
             <div class="row">
-                <div class="col-7 col-sm-3 order-sm-first mb-4">
+                <div class="col-12 col-sm-3 order-sm-first mb-5">
                     <div class="card">
                         <div class="card-body">
                             <p class="font-italic text-muted">@bibishanpandey</p>
@@ -140,99 +144,115 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-5 col-sm-3 order-sm-last mb-4">
+                <div class="col-12 col-sm-9">
                     <div class="card mb-5">
-                        <div class="card-body">
-                            <h5 class="card-title">Bids Left</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">8/8</h6>
-                            <p class="card-subtitle mb-2 font-italic"><span class="badge badge-pill badge-primary">Free
-                                    Member</span></p>
-                            <a href="/account/pricing.html" class="btn btn-sm btn-success btn-block shadow-lg">Upgrade Now</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">My Funds</h5>
-                            <h6 class="card-subtitle mb-2 text-muted"><i class="fa fa-dollar"> 20,000</i></h6>
-                            <a href="#" class="btn btn-sm btn-info btn-block shadow-lg">Deposit Funds</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6">
-                    <div class="card mb-5">
-                        <div class="card-header">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="mr-2">
-                                        <img class="rounded-circle img-fluid" width="45" src="/img/avatar-female.png"
-                                            alt="">
-                                    </div>
-                                    <div class="ml-2">
-                                        <div class="h5 m-0 font-italic">@bhumikakoirala</div>
-                                        <div class="text-muted">Bhumika Koirala</div>
-                                    </div>
+                        <div class="card-header bg-info shadow-lg text-white">
+                            <div class="row mt-2 mb-2">
+                                <div class="col-3 col-sm-3 order-sm-first">
+                                    <img class="rounded img-fluid" width="200" src="/img/bivishan.jpg" alt="">
+                                </div>
+                                <div class="col-1 col-sm-1 order-sm-last">
+                                    <button class="btn btn-danger shadow btn-sm"><i class="fa fa-edit"></i></button>
+                                </div>
+                                <div class="col-8 col-sm-8">
+                                    <ul class="list-inline">
+                                        <li class="font-italic list-inline-item">@bibishanpandey</li>
+                                        <li class="list-inline-item"><span
+                                                class="badge badge-pill badge-success">Online</span></li>
+                                        <li class="list-inline-item"><i class="fa fa-dollar"></i> 5 USD/Hour</li>
+                                        <li class="list-inline-item"><img src="/img/country.png" class="img-fluid"
+                                                height="10px" width="10px" alt=""> Kathmandu, Nepal</li>
+                                    </ul>
+                                    <p class="h1">Bibishan Pandey</p>
+                                    <p class="h3">Software Engineer</p>
+                                    <ul class="list-inline text-warning">
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+                                    </ul>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item"><i class="fa fa-check"></i></li>
+                                        <li class="list-inline-item"><span class="badge badge-success">Certified
+                                                Account</span></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="card-body">
-                            <div class="text-muted mb-2">Received Budget : <i class="fa fa-dollar">10,000</i></div>
-                            <a class="card-link" href="#">
-                                <h5 class="card-title text-danger">Project Title</h5>
-                            </a>
-                            <p class="card-text">
-                                Project Description
-                            </p>
-                            <div>
-                                <!-- skills -->
-                                <span class="badge badge-primary">JavaScript</span>
-                                <span class="badge badge-secondary">Node.js</span>
-                                <span class="badge badge-danger">Ruby</span>
-                                <span class="badge badge-info">Python</span>
-                                <span class="badge badge-warning">PHP</span>
-                                <span class="badge badge-success">Android</span>
-                            </div>
-                        </div>
-                        <div class="card-footer d-flex ml-0">
-                            <p class="font-italic">Completed by: <span
-                                    class="h6 m-0 text-secondary">@bibishanpandey</span></p>
-                        </div>
                     </div>
+
                     <div class="card mb-5">
-                        <div class="card-header">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="mr-2">
-                                        <img class="rounded-circle img-fluid" width="45" src="/img/avatar-male.png"
-                                            alt="">
-                                    </div>
-                                    <div class="ml-2">
-                                        <div class="h5 m-0 font-italic">@johndoe</div>
-                                        <div class="text-muted">John Doe</div>
-                                    </div>
+                        <div class="card-header bg-info shadow-lg text-white">
+                            <div class="row mt-2 mb-2">
+                                <div class="col-3 col-sm-3 order-sm-first">
+                                    <img class="rounded img-fluid" width="200" src="/img/bivishan.jpg" alt="">
+                                </div>
+                                <div class="col-1 col-sm-1 order-sm-last">
+                                    <button class="btn btn-danger shadow btn-sm"><i class="fa fa-edit"></i></button>
+                                </div>
+                                <div class="col-8 col-sm-8">
+                                    <ul class="list-inline">
+                                        <li class="font-italic list-inline-item">@bibishanpandey</li>
+                                        <li class="list-inline-item"><span
+                                                class="badge badge-pill badge-success">Online</span></li>
+                                        <li class="list-inline-item"><i class="fa fa-dollar"></i> 5 USD/Hour</li>
+                                        <li class="list-inline-item"><img src="/img/country.png" class="img-fluid"
+                                                height="10px" width="10px" alt=""> Kathmandu, Nepal</li>
+                                    </ul>
+                                    <p class="h1">Bibishan Pandey</p>
+                                    <p class="h3">Software Engineer</p>
+                                    <ul class="list-inline text-warning">
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+                                    </ul>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item"><i class="fa fa-check"></i></li>
+                                        <li class="list-inline-item"><span class="badge badge-success">Certified
+                                                Account</span></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="card-body">
-                            <div class="text-muted mb-2">Received Budget : <i class="fa fa-dollar">10,000</i></div>
-                            <a class="card-link" href="#">
-                                <h5 class="card-title text-danger">Project Title</h5>
-                            </a>
-                            <p class="card-text">
-                                Project Description
-                            </p>
-                            <div>
-                                <!-- skills -->
-                                <span class="badge badge-primary">JavaScript</span>
-                                <span class="badge badge-secondary">Node.js</span>
-                                <span class="badge badge-danger">Ruby</span>
-                                <span class="badge badge-info">Python</span>
-                                <span class="badge badge-warning">PHP</span>
-                                <span class="badge badge-success">Android</span>
+                    </div>
+
+                    <div class="card mb-5">
+                        <div class="card-header bg-info shadow-lg text-white">
+                            <div class="row mt-2 mb-2">
+                                <div class="col-3 col-sm-3 order-sm-first">
+                                    <img class="rounded img-fluid" width="200" src="/img/bivishan.jpg" alt="">
+                                </div>
+                                <div class="col-1 col-sm-1 order-sm-last">
+                                    <button class="btn btn-danger shadow btn-sm"><i class="fa fa-edit"></i></button>
+                                </div>
+                                <div class="col-8 col-sm-8">
+                                    <ul class="list-inline">
+                                        <li class="font-italic list-inline-item">@bibishanpandey</li>
+                                        <li class="list-inline-item"><span
+                                                class="badge badge-pill badge-success">Online</span></li>
+                                        <li class="list-inline-item"><i class="fa fa-dollar"></i> 5 USD/Hour</li>
+                                        <li class="list-inline-item"><img src="/img/country.png" class="img-fluid"
+                                                height="10px" width="10px" alt=""> Kathmandu, Nepal</li>
+                                    </ul>
+                                    <p class="h1">Bibishan Pandey</p>
+                                    <p class="h3">Software Engineer</p>
+                                    <ul class="list-inline text-warning">
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+                                    </ul>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item"><i class="fa fa-check"></i></li>
+                                        <li class="list-inline-item"><span class="badge badge-success">Certified
+                                                Account</span></li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card-footer d-flex ml-0">
-                            <p class="font-italic">Completed by: <span
-                                    class="h6 m-0 text-secondary">@bibishanpandey</span></p>
                         </div>
                     </div>
                 </div>
@@ -271,18 +291,18 @@
                                 <dd><a href="mailto:freelancenepal@gmail.com">freelancenepal@gmail.com</a></dd>
                             </dl>
                             <dl class="contact-list">
-                                <dt><a href="/pages/aboutus.html">About Us</a></dt>
-                                <dt><a href="/account/pricing.html">Pricing</a></dt>
+                                <dt><a href="aboutus.html">About Us</a></dt>
+                                <dt><a href="pricing.html">Pricing</a></dt>
                             </dl>
                         </div>
                         <div class="col-6">
                             <h5 class="font-weight-bold">Account</h6>
                                 <ul class="nav-list">
-                                    <li class="nav-item"><a href="/pages/profile.html">Profile</a></li>
-                                    <li class="nav-item"><a href="/pages/projects.html">My
+                                    <li class="nav-item"><a href="profile.html">Profile</a></li>
+                                    <li class="nav-item"><a href="projects.html">My
                                             Projects</a></li>
-                                    <li class="nav-item"><a href="/pages/messages.html">Messages</a></li>
-                                    <li class="nav-item"><a href="/pages/dashboard.html">Dashboard</a></li>
+                                    <li class="nav-item"><a href="messages.html">Messages</a></li>
+                                    <li class="nav-item"><a href="dashboard.html">Dashboard</a></li>
                                 </ul>
                         </div>
                     </div>
@@ -314,10 +334,11 @@
     </footer>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <!-- build:js js/main.js -->
     <script src="/node_modules/jquery/dist/jquery.min.js"></script>
     <script src="/node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
+<!-- endbuild -->
 </body>
 
 </html>

@@ -8,6 +8,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
     <!-- Bootstrap CSS -->
+    <!-- build:css css/main.css -->
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/node_modules/font-awesome/css/font-awesome.min.css">
 
@@ -15,6 +16,7 @@
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/social.css">
     <link rel="stylesheet" href="/css/body.css">
+    <!-- endbuild -->
 
     <link rel="icon" href="/img/bird_red.png" type="image/png" sizes="16x16">
 
@@ -44,17 +46,17 @@
                         </div>
                     </li>
                     <li class="nav-item mr-1">
-                        <a class="nav-link" href="/account/howitworks.html"><i class="fa fa-globe"></i> How it
+                        <a class="nav-link" href="howitworks.html"><i class="fa fa-globe"></i> How it
                             works?</a>
                     </li>
                     <li class="nav-item mr-1">
-                        <a class="nav-link" href="/account/signin.html"><i class="fa fa-sign-in"></i> Sign In</a>
+                        <a class="nav-link" href="signin.html"><i class="fa fa-sign-in"></i> Sign In</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/account/signup.html"><i class="fa fa-plus-square-o"></i> Sign Up</a>
+                        <a class="nav-link" href="signup.html"><i class="fa fa-plus-square-o"></i> Sign Up</a>
                     </li>
                     <li class="nav-item">
-                        <a class="btn btn-outline-warning" href="/pages/dashboard.html">Go To Dashboard</a>
+                        <a class="btn btn-outline-warning" href="dashboard.html">Go To Dashboard</a>
                     </li>
                 </ul>
             </div>
@@ -63,64 +65,29 @@
 
     <div class="bg-white p-1">
         <div class="container mt-5 mb-5 col-sm-6 align-self-center shadow p-5 rounded text-muted">
-            <h1 class="display-4">Sign Up</h1>
-            <form action="/pages/dashboard.html">
-                <div class="form-group shadow-sm">
+            <h1 class="display-4">Sign In</h1>
+            <form action="dashboard.html">
+                <div class="form-group">
+                    <!-- <label for="id_username"></label> -->
                     <input class="form-control shadow-sm" type="text" name="username" id="id_username"
                         required="required" placeholder="Username" autocomplete="off" />
                 </div>
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-6">
-                        <div class="form-group shadow-sm">
-                            <input class="form-control shadow-sm" type="text" name="firstname" id="id_firstname"
-                        required="required" placeholder="First name" autocomplete="off" />
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-6">
-                        <div class="form-group shadow-sm">
-                            <input class="form-control shadow-sm" type="text" name="lastname" id="id_lastname"
-                        required="required" placeholder="Last name" autocomplete="off" />
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group shadow-sm">
-                    <input class="form-control shadow-sm" type="email" name="email" id="id_email"
-                        required="required" placeholder="Email" autocomplete="off" />
-                </div>
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-6">
-                        <div class="form-group shadow-sm">
-                            <input class="form-control shadow-sm" type="password" name="password" id="id_password"
+                <div class="form-group">
+                    <!-- <label for="id_password"></label> -->
+                    <input class="form-control shadow-sm" type="password" name="password" id="id_password"
                         required="required" placeholder="Password" autocomplete="off" />
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-6">
-                        <div class="form-group shadow-sm">
-                            <input class="form-control shadow-sm" type="password" name="confirmpassword" id="confirmid_password"
-                        required="required" placeholder="Confirm Password" autocomplete="off" />
-                        </div>
-                    </div>
-                </div>
-                <div class="alert alert-warning">
-                    Please <strong>choose</strong> your interest
-                </div>
-                <div class="btn-group d-flex btn-group-toggle" data-toggle="buttons" id="id_user_type">
-                    <label for="id_user_type_0" class="col-md-6 btn shadow-sm btn-outline-primary">
-                        <input type="radio" name="user_type" value="FRL" required="" id="id_user_type_0">
-                        Freelancer
-                    </label>
-                    <label for="id_user_type_1" class="col-md-6 btn shadow-sm btn-outline-secondary">
-                        <input type="radio" name="user_type" value="EMP" required="" id="id_user_type_1">
-                        Employer
-                    </label>
                 </div>
                 <div class="form-group pt-5">
-                    <a href="/pages/dashboard.html" class="btn btn-block btn-lg btn-info shadow-lg">SIGN UP</a>
+                    <a href="dashboard.html" class="btn btn-block btn-lg btn-info shadow-lg">SIGN IN</a>
+                    <!-- <input type="submit" class="btn btn-block btn-lg btn-info shadow-lg" title="Sign In"
+                        value="SIGN IN" /> -->
                 </div>
             </form>
             <div class="form-group">
-                <p class="text-secondary">Have an account?</p>
-                <p><a href="/account/signin.html" class="btn btn-warning btn-block btn-lg shadow text-white">SIGN IN</a></p>
+                <p class="text-secondary">No account? Click below to register your new account</p>
+                <p><a href="signup.html" class="btn btn-block btn-lg btn-warning shadow-lg text-white">SIGN
+                        UP</a></p>
+                <p><a href="#" class="btn btn-outline-info">Forgot password?</a></p>
             </div>
         </div>
     </div>
@@ -156,15 +123,15 @@
                                 <dd><a href="mailto:freelancenepal@gmail.com">freelancenepal@gmail.com</a></dd>
                             </dl>
                             <dl class="contact-list">
-                                <dt><a href="/pages/aboutus.html">About Us</a></dt>
-                                <dt><a href="/account/pricing.html">Pricing</a></dt>
+                                <dt><a href="aboutus.html">About Us</a></dt>
+                                <dt><a href="pricing.html">Pricing</a></dt>
                             </dl>
                         </div>
                         <div class="col-6">
                             <h5 class="font-weight-bold">Account</h6>
                                 <ul class="nav-list">
-                                    <li class="nav-item"><a href="/account/signin.html">Sign In</a></li>
-                                    <li class="nav-item"><a href="/account/signup.html">Sign Up</a></li>
+                                    <li class="nav-item"><a href="signin.html">Sign In</a></li>
+                                    <li class="nav-item"><a href="signup.html">Sign Up</a></li>
                                 </ul>
                         </div>
                     </div>
@@ -196,10 +163,11 @@
     </footer>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <!-- build:js js/main.js -->
     <script src="/node_modules/jquery/dist/jquery.min.js"></script>
     <script src="/node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
+    <!-- endbuild -->
 </body>
 
 </html>

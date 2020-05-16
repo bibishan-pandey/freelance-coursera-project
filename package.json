@@ -6,22 +6,35 @@
   "scripts": {
     "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lite": "lite-server"
+    "lite": "lite-server",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "clean": "rimraf dist",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+    "imagemin": "imagemin img/* -o dist/img",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin aboutus.html -d dist --htmlmin -o dist/aboutus.html && usemin browseprojects.html -d dist --htmlmin -o dist/browseprojects.html && usemin dashboard.html -d dist --htmlmin -o dist/dashboard.html && usemin freelancers.html -d dist --htmlmin -o dist/freelancers.html && usemin messages.html -d dist --htmlmin -o dist/messages.html && usemin postproject.html -d dist --htmlmin -o dist/postproject.html && usemin profile.html -d dist --htmlmin -o dist/profile.html && usemin projects.html -d dist --htmlmin -o dist/projects.html && usemin pricing.html -d dist --htmlmin -o dist/pricing.html && usemin signin.html -d dist --htmlmin -o dist/signin.html && usemin signup.html -d dist --htmlmin -o dist/signup.html && usemin howitworks.html -d dist --htmlmin -o dist/howitworks.html",
+    "build": "npm run clean && npm run copyfonts && npm run imagemin && npm run usemin"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://bibishanpandey@bitbucket.org/bibishanpandey/freelance-nepal.git"
+    "url": "git+https://github.com/bibishan-pandey/freelance-coursera-project.git"
   },
   "author": "Bibishan Pandey",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/bibishanpandey/freelance-nepal#readme",
+  "homepage": "https://bibishan-pandey.github.io/freelance-coursera-project",
   "devDependencies": {
-    "lite-server": "^2.3.0"
+    "cssmin": "^0.4.3",
+    "htmlmin": "0.0.7",
+    "lite-server": "^2.3.0",
+    "rimraf": "^2.6.2",
+    "uglifyjs": "^2.4.11",
+    "usemin-cli": "^0.5.1"
   },
   "dependencies": {
     "bootstrap": "^4.4.1",
     "bootstrap-social": "^5.1.1",
     "fontawesome": "^4.7.0",
+    "gh-pages": "^2.2.0",
     "jquery": "^3.4.1",
     "popper.js": "^1.16.1"
   }
